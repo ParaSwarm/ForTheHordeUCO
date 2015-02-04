@@ -25,8 +25,8 @@ namespace Homework_1.Pipes
         }
         public void attachFilter(Filter pmp, Filter drn)
         {
-            pump = pmp;
-            drain = drn;
+            Pump = pmp;
+            Drain = drn;     
         }
 
         private Filter pump;

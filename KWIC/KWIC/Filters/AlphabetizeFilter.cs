@@ -18,7 +18,7 @@ namespace Homework_1.Filters
             ListStringCompare compare = new ListStringCompare();
 
            TempStorage.Sort(compare);
-            
+           TempStorage.Sort(compare);
        
             pushData();
             return true;
@@ -31,6 +31,7 @@ namespace Homework_1.Filters
 
         public override void pushData()
         {
+            Console.WriteLine("Test".CompareTo("Is"));
          //   Sink.Data = tempStorage;
         }
     }
@@ -40,7 +41,9 @@ namespace Homework_1.Filters
     {
         public override int Compare(List<string> x, List<string> y)
         {
-           return x.ElementAt(0).CompareTo(y.ElementAt(0));
+
+            Console.WriteLine(x.ElementAt(0) + " ,   " + y.ElementAt(0) + ": " + x.ElementAt(0).CompareTo(y.ElementAt(0)));
+           return x.ElementAt(0).Trim().CompareTo(y.ElementAt(0).Trim());
         }
     }
 }

@@ -54,20 +54,32 @@ namespace Homework_1
         {
             string temp = txtInput.Text.ToString();
 
-            if (temp != null)
+            if (temp != "")
             {
                 data = new TextParser(temp);
 
                 pipeA.Data = data.SentenceList;
-                //cycler.Source = pipeA;
-                //cycler.pullData();
-                //cycler.action();
 
-                alphabetize.Source = pipeA;
+
+                pipeB.attachFilter(cycler, alphabetize);
+
+                cycler.Source = pipeA;
+                cycler.Sink = pipeB;
+
+
+               
+                cycler.pullData();
+                cycler.action();
+
+                pipeB.Data = cycler.TempStorage;
+
+                alphabetize.Source = pipeB;
                 alphabetize.pullData();
                 alphabetize.action();
 
-                foreach (List<string> list in alphabetize.TempStorage)
+            
+
+               foreach (List<string> list in alphabetize.TempStorage)
                       {
                           foreach (string test in list)
                           {
@@ -83,6 +95,12 @@ namespace Homework_1
         {
             txtInput.Clear();
             txtOutput.Clear();
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         } 
     }
 }

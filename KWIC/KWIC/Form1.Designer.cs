@@ -34,6 +34,7 @@
             this.txtInput = new System.Windows.Forms.TextBox();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblInput
@@ -60,10 +61,10 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(21, 204);
+            this.btnRun.Location = new System.Drawing.Point(83, 205);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(141, 45);
-            this.btnRun.TabIndex = 1;
+            this.btnRun.Size = new System.Drawing.Size(83, 45);
+            this.btnRun.TabIndex = 2;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
@@ -73,32 +74,45 @@
             this.txtInput.Location = new System.Drawing.Point(98, 27);
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
+            this.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtInput.Size = new System.Drawing.Size(275, 68);
-            this.txtInput.TabIndex = 2;
+            this.txtInput.TabIndex = 0;
             // 
             // txtOutput
             // 
             this.txtOutput.Location = new System.Drawing.Point(98, 101);
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtOutput.Size = new System.Drawing.Size(275, 68);
-            this.txtOutput.TabIndex = 2;
+            this.txtOutput.TabIndex = 1;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(222, 204);
+            this.btnClear.Location = new System.Drawing.Point(179, 205);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(141, 45);
-            this.btnClear.TabIndex = 1;
+            this.btnClear.Size = new System.Drawing.Size(83, 45);
+            this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(275, 205);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(83, 45);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 273);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnClear);
@@ -122,6 +136,7 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
