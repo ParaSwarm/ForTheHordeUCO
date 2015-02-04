@@ -1,0 +1,8 @@
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\bin\Debug\Homework 1.exe.config
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\bin\Debug\Homework 1.exe
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\bin\Debug\Homework 1.pdb
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\obj\Debug\Homework_1.Form1.resources
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\obj\Debug\Homework_1.Properties.Resources.resources
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\obj\Debug\KWIC.csproj.GenerateResource.Cache
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\obj\Debug\Homework 1.exe
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC\obj\Debug\Homework 1.pdb
