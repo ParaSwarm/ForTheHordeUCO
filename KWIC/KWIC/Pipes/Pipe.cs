@@ -1,32 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Homework_1
 {
-    interface Pipe
+    interface IPipe
     {
+        Filter Pump { get; set; }
+        Filter Drain { get; set; }
+        List<List<string>> Data { get; set; }
 
-        void attachFilter(Filter pmp, Filter snk);
-
-        Filter Pump
-        {
-            get;
-            set;
-        }
-
-        Filter Drain
-        {
-            get;
-            set;
-        }
-
-        List<List<string>> Data
-        {
-            get;
-            set;
-        }
+        void AttachFilter(Filter pumpFilter, Filter sinkFilter);
     }
 }
