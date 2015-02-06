@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Homework_1.Filters
 {
-    class AlphabetizeFilter : Filter
+    public class AlphabetizeFilter : Filter
     {
         public override bool Action()
         {

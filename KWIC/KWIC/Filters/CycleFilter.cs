@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Homework_1.Filters
 {
-    class CycleFilter : Filter
+    public class CycleFilter : Filter
     {
         public override bool Action()
         {

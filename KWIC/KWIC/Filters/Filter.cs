@@ -2,7 +2,7 @@
 
 namespace Homework_1
 {
-    abstract class Filter
+    public abstract class Filter
     {
         private TextParser parseText;
         protected TextParser ParseText

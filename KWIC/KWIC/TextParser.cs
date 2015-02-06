@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Homework_1
 {
-    class TextParser
+    public class TextParser
     {
         private List<List<string>> sentenceList = new List<List<string>>();
         public List<List<string>> SentenceList

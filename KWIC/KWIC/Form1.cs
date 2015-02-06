@@ -46,7 +46,7 @@ namespace Homework_1
 
 
 
-        private void btnRun_Click(object sender, EventArgs e)
+        public void btnRun_Click(object sender, EventArgs e)
         {
             string temp = txtInput.Text.ToString();
 
@@ -86,7 +86,7 @@ namespace Homework_1
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        public void btnClear_Click(object sender, EventArgs e)
         {
             txtInput.Clear();
             txtOutput.Clear();

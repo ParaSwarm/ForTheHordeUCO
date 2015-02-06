@@ -2,7 +2,7 @@
 
 namespace Homework_1.Pipes
 {
-    class GenericPipe : IPipe
+    public class GenericPipe : IPipe
     {
         public GenericPipe()
         {

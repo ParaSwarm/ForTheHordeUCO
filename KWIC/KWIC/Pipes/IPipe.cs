@@ -2,7 +2,7 @@
 
 namespace Homework_1
 {
-    interface IPipe
+    public interface IPipe
     {
         Filter Pump { get; set; }
         Filter Drain { get; set; }
