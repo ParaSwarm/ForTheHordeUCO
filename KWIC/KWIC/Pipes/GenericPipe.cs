@@ -26,6 +26,18 @@ namespace Homework_1.Pipes
             set
             {
                 pump = value;
+
+                try
+                {
+                    if (Pump != null)
+                    {
+                        Pump.Sink = this;
+                    }
+                }
+                catch
+                {
+
+                }
             }
         }
 
@@ -39,6 +51,15 @@ namespace Homework_1.Pipes
             set
             {
                 drain = value;
+                try
+                {
+                    if (Drain != null)
+                    {
+                        Drain.Source = this;
+                    }
+                }
+                catch{ }
+
             }
         }
 
@@ -61,9 +82,9 @@ namespace Homework_1.Pipes
         }
 
         public void AttachFilter(Filter pumpFilter, Filter drainFilter)
-        {
+        {     
             Pump = pumpFilter;
-            Drain = drainFilter;
+            Drain = drainFilter;   
         }
     }
 }
