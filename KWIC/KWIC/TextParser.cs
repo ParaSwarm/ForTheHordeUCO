@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework_1
 {
-    class TextParser
+    public class TextParser
     {
         private List<List<string>> sentenceList = new List<List<string>>();
         public List<List<string>> SentenceList

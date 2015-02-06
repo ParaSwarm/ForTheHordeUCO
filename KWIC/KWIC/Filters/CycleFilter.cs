@@ -1,28 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework_1.Filters
 {
-    class CycleFilter : Filter
+    public class CycleFilter : Filter
     {
-        public override bool action()
+        public override bool Action()
         {
-           string newData = "";
- 
-            pullData();
+            string newData = "";
+
+            PullData();
 
             foreach (List<string> sentence in TempStorage)
             {
-
-
-                
-                
                 for (int x = 0; x < sentence.Count; x++)
                 {
-                    string front ="";
+                    string front = "";
                     string back = "";
 
                     for (int y = x; y < sentence.Count; y++)
@@ -48,22 +42,22 @@ namespace Homework_1.Filters
             try
             {
                 if (Sink.Data != null)
-                    pushData();
+                    PushData();
             }
             catch (NullReferenceException ex)
             {
-                
+
             }
-          
+
             return true;
         }
 
-        public override void pullData()
+        public override void PullData()
         {
             tempStorage = Source.Data;
         }
 
-        public override void pushData()
+        public override void PushData()
         {
             Sink.Data = tempStorage;
         }

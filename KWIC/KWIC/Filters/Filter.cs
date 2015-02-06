@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Homework_1
 {
-    abstract class Filter
+    public abstract class Filter
     {
         private TextParser parseText;
         protected TextParser ParseText
@@ -14,6 +10,7 @@ namespace Homework_1
             get { return parseText; }
             set { parseText = value; }
         }
+
         protected List<List<string>> tempStorage;
         public List<List<string>> TempStorage
         {
@@ -21,8 +18,8 @@ namespace Homework_1
             set { tempStorage = value; }
         }
 
-        private Pipe source;
-        public Pipe Source
+        private IPipe source;
+        public IPipe Source
         {
             get
             {
@@ -34,8 +31,8 @@ namespace Homework_1
             }
         }
 
-        private Pipe sink;
-        public Pipe Sink
+        private IPipe sink;
+        public IPipe Sink
         {
             get
             {
@@ -47,22 +44,21 @@ namespace Homework_1
             }
         }
 
-
-        public void attachPipe(Pipe src, Pipe snk = null)
+        public void AttachPipe(IPipe src, IPipe snk = null)
         {
             source = src;
             sink = snk;
         }
 
-        public void pullData(List<List<string>> input)
+        public void PullData(List<List<string>> input)
         {
             tempStorage = new List<List<string>>();
             tempStorage = input;
         }
 
 
-    abstract public void pushData();
-    abstract public void pullData();
-    abstract public bool action();
+        abstract public void PushData();
+        abstract public void PullData();
+        abstract public bool Action();
     }
 }

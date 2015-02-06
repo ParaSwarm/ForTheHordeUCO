@@ -1,32 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Homework_1.Pipes
 {
-    class GenericPipe : Pipe
+    public class GenericPipe : IPipe
     {
         public GenericPipe()
         {
             Data = null;
-            attachFilter(null, null);
+            AttachFilter(null, null);
         }
+
         public GenericPipe(List<List<string>> input)
         {
             Data = input;
-            attachFilter(null, null);
-        }
-
-        public GenericPipe(Filter pmp, Filter drn)
-        {
-            attachFilter(pmp, drn);
-        }
-        public void attachFilter(Filter pmp, Filter drn)
-        {
-            Pump = pmp;
-            Drain = drn;     
+            AttachFilter(null, null);
         }
 
         private Filter pump;
@@ -66,6 +53,17 @@ namespace Homework_1.Pipes
             {
                 data = value;
             }
+        }
+
+        public GenericPipe(Filter pumpFilter, Filter drainFilter)
+        {
+            AttachFilter(pumpFilter, drainFilter);
+        }
+
+        public void AttachFilter(Filter pumpFilter, Filter drainFilter)
+        {
+            Pump = pumpFilter;
+            Drain = drainFilter;
         }
     }
 }

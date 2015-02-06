@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Homework_1.Filters;
+﻿using Homework_1.Filters;
 using Homework_1.Pipes;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
 namespace Homework_1
 {
     public partial class Form1 : Form
@@ -22,9 +17,10 @@ namespace Homework_1
         private CycleFilter cycler;
         private AlphabetizeFilter alphabetize;
 
-        private string Input{
-            get{ return input;}
-            set{ input = value;}
+        private string Input
+        {
+            get { return input; }
+            set { input = value; }
         }
 
 
@@ -40,7 +36,7 @@ namespace Homework_1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,9 +44,9 @@ namespace Homework_1
 
         }
 
-        
 
-        private void btnRun_Click(object sender, EventArgs e)
+
+        public void btnRun_Click(object sender, EventArgs e)
         {
             string temp = txtInput.Text.ToString();
 
@@ -61,37 +57,36 @@ namespace Homework_1
                 pipeA.Data = data.SentenceList;
 
 
-                pipeB.attachFilter(cycler, alphabetize);
+                pipeB.AttachFilter(cycler, alphabetize);
 
                 cycler.Source = pipeA;
                 cycler.Sink = pipeB;
 
 
-               
-                cycler.pullData();
-                cycler.action();
+
+                cycler.PullData();
+                cycler.Action();
 
                 pipeB.Data = cycler.TempStorage;
 
                 alphabetize.Source = pipeB;
-                alphabetize.pullData();
-                alphabetize.action();
+                alphabetize.PullData();
+                alphabetize.Action();
 
-            
 
-               foreach (List<string> list in alphabetize.TempStorage)
-                      {
-                          foreach (string test in list)
-                          {
-                              txtOutput.Text += test + " ";
-                          }
-                          txtOutput.Text += Environment.NewLine;
-                      }
-                  
+                foreach (List<string> list in alphabetize.TempStorage)
+                {
+                    foreach (string test in list)
+                    {
+                        txtOutput.Text += test + " ";
+                    }
+
+                    txtOutput.Text += Environment.NewLine;
+                }
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        public void btnClear_Click(object sender, EventArgs e)
         {
             txtInput.Clear();
             txtOutput.Clear();
@@ -101,6 +96,6 @@ namespace Homework_1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        } 
+        }
     }
 }
