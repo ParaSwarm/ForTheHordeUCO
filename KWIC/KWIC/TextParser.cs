@@ -5,6 +5,34 @@ namespace Homework_1
 {
     public class TextParser
     {
+
+        public string getWord(int line, int index)
+        {
+            string value = "";
+
+
+            if( line >= 0 &&
+                line <= sentenceList.Count &&
+                index >= 0 &&
+                index <= sentenceList[line].Count)
+            {
+                value = sentenceList[line][index];
+            }
+
+            return value;
+        }
+
+
+        public void getAllWords()
+        {
+            for(int x = 0;  x < sentenceList.Count; x++)
+            {
+                for (int y = 0; y < sentenceList[x].Count; y++)
+                {
+                    Console.WriteLine(getWord(x, y));
+                }
+            }
+        }
         private List<List<string>> sentenceList = new List<List<string>>();
         public List<List<string>> SentenceList
         {

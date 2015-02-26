@@ -84,6 +84,8 @@ namespace Homework_1
                     txtOutput.Text += Environment.NewLine;
                 }
             }
+
+            data.getAllWords();
         }
 
         public void btnClear_Click(object sender, EventArgs e)
