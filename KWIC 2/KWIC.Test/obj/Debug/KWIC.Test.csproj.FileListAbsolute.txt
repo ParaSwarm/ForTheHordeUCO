@@ -1,0 +1,9 @@
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\obj\Debug\KWIC.Test.csprojResolveAssemblyReference.cache
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\KWIC.Test.dll
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\KWIC.Test.pdb
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\FakeItEasy.dll
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\Homework 1.exe
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\Homework 1.pdb
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\bin\Debug\FakeItEasy.xml
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\obj\Debug\KWIC.Test.dll
+C:\Users\Rupert\Documents\GitHub\ForTheHordeUCO\KWIC\KWIC.Test\obj\Debug\KWIC.Test.pdb

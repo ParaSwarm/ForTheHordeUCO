@@ -11,6 +11,17 @@ namespace Homework_1
             get { return sentenceList; }
         }
 
+
+        public void setChar(int line, int word, int c, char value)
+        {
+
+            sentenceList[line][word].ToCharArray()[c] = 'd';
+        }
+
+        public char getChar(int line, int word, int c){
+            return SentenceList[line][word][c];
+            }
+
        public TextParser(string temp)
         {
             if (temp == null)
@@ -74,6 +85,7 @@ namespace Homework_1
                 {
                     if (previousWordIndex == 0)
                     {
+                      
                         sentence.Add(temp.Substring(0, (x - previousWordIndex)).TrimEnd('\r','\n'));
                     }
                     else
