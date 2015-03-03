@@ -45,8 +45,26 @@ namespace KWIC_Shared.SharedData
     {
         public override int Compare(string x, string y)
         {
-        
-            return x.Trim().CompareTo(y.Trim());
+            if (x.Equals(y))
+                return 0;
+        //    if(x.ToLower()[0] == y.ToLower()[0])
+           //     return iterate(x, y, 0);
+
+
+            return String.Compare(x, y);
         }
+
+
+    //    public int iterate(string x, string y, int depth)
+   //     {
+   //         int val = 0;
+
+            
+   //         if(x.Substring(depth + 1, x.Length).ToLower() == y.Substring(depth + 1, y.Length).ToLower())
+   //         {
+        //        return iterate(x, y, 0);
+      //      }
+     //       return val;
+        //}
     }
 }
