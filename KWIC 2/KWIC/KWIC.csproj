@@ -52,6 +52,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedData\AlphaShift.cs" />
     <Compile Include="SharedData\CircularShift.cs" />
     <Compile Include="SharedData\Controller.cs" />
     <Compile Include="SharedData\LineStorage.cs" />
