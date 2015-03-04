@@ -52,7 +52,7 @@ namespace KWIC_Shared.SharedData
         public void initStorage(string value)
         {
             storage = new LineStorage(value);
-            cycle.Setup(storage, NoiseWords);
+            cycle.Setup(storage.getSentences(), NoiseWords);
             alpha.Setup(cycle.CycledList);
         }
 

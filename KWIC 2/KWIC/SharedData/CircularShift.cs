@@ -23,13 +23,13 @@ namespace KWIC_Shared.SharedData
             set { cycledSentence = value; }
         }
  
-         public void Setup(LineStorage lines, List<string> noise)
+         public void Setup(List<List<string>> words, List<string> noise)
         {
             string newData = "";
             bool noiseFound;
             cycledList = new List<string>();
 
-            foreach (List<string> sentence in lines.Words)
+            foreach (List<string> sentence in words)
             {
                 string tempData = "";
                 noiseFound = false;

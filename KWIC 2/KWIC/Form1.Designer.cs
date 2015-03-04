@@ -44,7 +44,7 @@
             // lblInput
             // 
             this.lblInput.AutoSize = true;
-            this.lblInput.Location = new System.Drawing.Point(18, 30);
+            this.lblInput.Location = new System.Drawing.Point(29, 57);
             this.lblInput.Name = "lblInput";
             this.lblInput.Size = new System.Drawing.Size(31, 13);
             this.lblInput.TabIndex = 0;
@@ -55,7 +55,7 @@
             // lblOutput
             // 
             this.lblOutput.AutoSize = true;
-            this.lblOutput.Location = new System.Drawing.Point(18, 104);
+            this.lblOutput.Location = new System.Drawing.Point(29, 213);
             this.lblOutput.Name = "lblOutput";
             this.lblOutput.Size = new System.Drawing.Size(39, 13);
             this.lblOutput.TabIndex = 0;
@@ -65,7 +65,7 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(83, 205);
+            this.btnRun.Location = new System.Drawing.Point(168, 333);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(83, 45);
             this.btnRun.TabIndex = 2;
@@ -75,25 +75,27 @@
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(98, 27);
+            this.txtInput.Location = new System.Drawing.Point(122, 54);
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
-            this.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtInput.Size = new System.Drawing.Size(275, 68);
+            this.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtInput.Size = new System.Drawing.Size(396, 104);
             this.txtInput.TabIndex = 0;
+            this.txtInput.WordWrap = false;
             // 
             // txtOutput
             // 
-            this.txtOutput.Location = new System.Drawing.Point(98, 101);
+            this.txtOutput.Location = new System.Drawing.Point(122, 200);
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
-            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtOutput.Size = new System.Drawing.Size(275, 68);
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtOutput.Size = new System.Drawing.Size(396, 112);
             this.txtOutput.TabIndex = 1;
+            this.txtOutput.WordWrap = false;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(179, 205);
+            this.btnClear.Location = new System.Drawing.Point(257, 333);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(83, 45);
             this.btnClear.TabIndex = 3;
@@ -103,7 +105,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(275, 205);
+            this.btnClose.Location = new System.Drawing.Point(358, 333);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(83, 45);
             this.btnClose.TabIndex = 4;
@@ -114,7 +116,7 @@
             // lblNoise
             // 
             this.lblNoise.AutoSize = true;
-            this.lblNoise.Location = new System.Drawing.Point(488, 30);
+            this.lblNoise.Location = new System.Drawing.Point(640, 89);
             this.lblNoise.Name = "lblNoise";
             this.lblNoise.Size = new System.Drawing.Size(90, 13);
             this.lblNoise.TabIndex = 5;
@@ -123,7 +125,7 @@
             // txtNoise
             // 
             this.txtNoise.Enabled = false;
-            this.txtNoise.Location = new System.Drawing.Point(446, 56);
+            this.txtNoise.Location = new System.Drawing.Point(619, 115);
             this.txtNoise.Multiline = true;
             this.txtNoise.Name = "txtNoise";
             this.txtNoise.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -134,7 +136,7 @@
             // 
             this.chkReplace.AutoSize = true;
             this.chkReplace.Enabled = false;
-            this.chkReplace.Location = new System.Drawing.Point(446, 244);
+            this.chkReplace.Location = new System.Drawing.Point(630, 319);
             this.chkReplace.Name = "chkReplace";
             this.chkReplace.Size = new System.Drawing.Size(100, 17);
             this.chkReplace.TabIndex = 7;
@@ -144,7 +146,7 @@
             // chkNoise
             // 
             this.chkNoise.AutoSize = true;
-            this.chkNoise.Location = new System.Drawing.Point(446, 220);
+            this.chkNoise.Location = new System.Drawing.Point(630, 295);
             this.chkNoise.Name = "chkNoise";
             this.chkNoise.Size = new System.Drawing.Size(130, 17);
             this.chkNoise.TabIndex = 7;
@@ -155,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 273);
+            this.ClientSize = new System.Drawing.Size(852, 400);
             this.Controls.Add(this.chkNoise);
             this.Controls.Add(this.chkReplace);
             this.Controls.Add(this.txtNoise);

@@ -12,6 +12,13 @@ namespace KWIC_Shared.SharedData
 
         private List<List<string>> words = new List<List<string>>();
 
+        public int SentenceCount
+        {
+            get { return words.Count; }
+        }
+
+
+       
         public List<List<string>> Words
         {
             get { return words; }
@@ -43,6 +50,14 @@ namespace KWIC_Shared.SharedData
 
 
             return message;
+        }
+
+        public List<List<string>> getSentences()
+        {
+            List<List<string>> temp = new List<List<string>>();
+            temp.AddRange(words);
+
+            return temp;    
         }
 
         public string getSentence(int line)
